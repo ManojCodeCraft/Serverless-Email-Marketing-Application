@@ -94,3 +94,8 @@ python lambda_function/lambda_function.py
 ```
 
 Ensure that the AWS credentials and configurations are properly set up in your environment.
+
+
+## 📃 License
+
+This project is licensed under the [MIT License](LICENSE)
