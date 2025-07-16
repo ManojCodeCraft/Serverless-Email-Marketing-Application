@@ -1,30 +1,109 @@
-# Serverless Email Marketing Application
 
-This project contains an AWS Lambda function that sends personalized HTML emails using Amazon SES and contact data from a CSV file stored in S3.
+# 📧 Serverless Email Marketing Application
 
-## Features
+**Automated, Scalable Email Campaigns Using AWS Serverless Architecture**
 
-- Scheduled email campaigns via Lambda
-- HTML template personalization using placeholders
-- CSV-based contact management
-- Fully serverless and scalable
+---
 
-## Files
+## 🧠 Overview
 
-- `lambda_function/lambda_function.py`: Main Lambda function
-- `lambda_function/contacts.csv`: Example CSV of contacts
-- `lambda_function/email_template.html`: HTML template with placeholders (e.g., `{{FirstName}}`)
-- `lambda_function/test_event.json`: Sample test event
+This project demonstrates a fully serverless email marketing solution leveraging AWS services. It automates the process of sending personalized HTML emails to a list of contacts stored in a CSV file on Amazon S3. The application is designed for scalability, cost-effectiveness, and ease of deployment.
 
-## Deployment
+---
 
-1. Upload `contacts.csv` and `email_template.html` to your S3 bucket (`apssdc-email-marketing`)
-2. Create a Lambda function using `lambda_function.py`
-3. Add necessary permissions (S3 read, SES send)
-4. Test using `test_event.json`
+## 🔧 AWS Services Utilized
 
-## Author
+| Service                 | Purpose                                                                 |
+|-------------------------|-------------------------------------------------------------------------|
+| **Amazon S3**           | Stores the CSV contact list and HTML email templates                    |
+| **AWS Lambda**          | Executes the email-sending logic in a serverless environment            |
+| **Amazon SES**          | Sends the personalized HTML emails to recipients                        |
+| **Amazon EventBridge**  | Triggers the Lambda function on a scheduled basis                       |
+| **AWS IAM**             | Manages permissions and access control for AWS resources                |
 
-Safiya Sulthana
-Manoj Kumar
-Uday Kumar
+---
+
+## 🗂️ Project Structure
+
+```
+Serverless-Email-Marketing-Application/
+├── images/                         # Contains architecture diagrams and related images
+├── lambda_function/
+│   ├── lambda_function.py          # Main Lambda function code
+│   ├── contacts.csv                # Sample CSV file with contact information
+│   ├── email_template.html         # HTML template for the email content
+│   └── test_event.json             # Sample event for testing the Lambda function
+├── README.md                       # Project documentation
+```
+
+---
+
+## 🧭 Architecture Diagram
+
+![Architecture Diagram](images/aws_architecture_diagram.png)
+
+*This diagram illustrates the serverless workflow:*
+
+1. **Amazon EventBridge** triggers the **AWS Lambda** function on a defined schedule.
+2. The Lambda function reads the **contacts.csv** and **email_template.html** from **Amazon S3**.
+3. For each contact, the Lambda function personalizes the email content.
+4. **Amazon SES** sends the personalized emails to the respective recipients.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- AWS account with necessary permissions for Lambda, S3, SES, EventBridge, and IAM.
+- Verified email addresses in Amazon SES (for sandbox environments).
+
+### Deployment Steps
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/ManojCodeCraft/Serverless-Email-Marketing-Application.git
+   cd Serverless-Email-Marketing-Application
+   ```
+
+2. **Install Dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Configure AWS Resources:**
+
+   - Upload `contacts.csv` and `email_template.html` to your designated S3 bucket.
+   - Set up Amazon SES and verify sender/recipient emails.
+   - Create an EventBridge rule to trigger the Lambda function on your desired schedule.
+
+4. **Deploy the Lambda Function:**
+
+   - Package and deploy the Lambda function using AWS CLI or AWS Console.
+   - Ensure the Lambda function has the necessary IAM role with permissions to access S3 and SES.
+
+---
+
+## 📬 Email Personalization
+
+The `email_template.html` file uses placeholders (e.g., `{{FirstName}}`) that are dynamically replaced with actual contact data from the `contacts.csv` file during execution. This allows for personalized email content for each recipient.
+
+---
+
+## 🧪 Testing
+
+You can test the Lambda function locally by simulating an event using the `test_event.json` file:
+
+```bash
+python lambda_function/lambda_function.py
+```
+
+Ensure that the AWS credentials and configurations are properly set up in your environment.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
