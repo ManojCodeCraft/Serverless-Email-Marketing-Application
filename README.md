@@ -40,7 +40,7 @@ Serverless-Email-Marketing-Application/
 
 ## 🧭 Architecture Diagram
 
-![Architecture Diagram](images/aws_architecture_diagram.png)
+![Architecture Diagram](images/Architecture.jpg)
 
 *This diagram illustrates the serverless workflow:*
 
