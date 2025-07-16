@@ -66,20 +66,13 @@ Serverless-Email-Marketing-Application/
    git clone https://github.com/ManojCodeCraft/Serverless-Email-Marketing-Application.git
    cd Serverless-Email-Marketing-Application
    ```
-
-2. **Install Dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Configure AWS Resources:**
+2. **Configure AWS Resources:**
 
    - Upload `contacts.csv` and `email_template.html` to your designated S3 bucket.
    - Set up Amazon SES and verify sender/recipient emails.
    - Create an EventBridge rule to trigger the Lambda function on your desired schedule.
 
-4. **Deploy the Lambda Function:**
+3. **Deploy the Lambda Function:**
 
    - Package and deploy the Lambda function using AWS CLI or AWS Console.
    - Ensure the Lambda function has the necessary IAM role with permissions to access S3 and SES.
@@ -101,9 +94,3 @@ python lambda_function/lambda_function.py
 ```
 
 Ensure that the AWS credentials and configurations are properly set up in your environment.
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
