@@ -1,8 +1,22 @@
 
-# 📧 Serverless Email Marketing Application
-
 **Automated, Scalable Email Campaigns Using AWS Serverless Architecture**
+## 🔍 At a Glance
 
+### 🧩 Problem it Solves
+Helps **college campus ambassadors** (like Unstop student reps) **automate mass email delivery** to registered students using a **custom domain**, without managing servers. Enables them to promote hackathons, coding challenges, and reminders **on schedule** without manual effort.
+
+### ✨ Key Features
+- 📩 **Send bulk emails with HTML templates** using your own domain
+- ⏰ **Schedule mail campaigns** precisely using AWS EventBridge
+- 🌐 **Completely serverless setup** — no need to manage or maintain servers
+- 🗃️ **Easy customization** for subject, body, recipient list, and templates
+- 🛠️ One-click deployment with AWS services (Lambda, SES, EventBridge)
+- 🔒 Uses verified sender domain (Unstop or other custom) for higher deliverability
+
+### 🛠️ Tech Stack
+- **Cloud Platform**: AWS (Lambda, SES, EventBridge)  
+- **Languages**: Python, HTML  
+- **Other Tools**: Amazon IAM, Git  
 ---
 
 ## 🧠 Overview
