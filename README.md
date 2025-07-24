@@ -1,5 +1,4 @@
-
-**Automated, Scalable Email Campaigns Using AWS Serverless Architecture**
+# 🚀 **Automated, Scalable Email Campaigns Using AWS Serverless Architecture**
 ## 🔍 At a Glance
 
 ### 🧩 Problem it Solves
