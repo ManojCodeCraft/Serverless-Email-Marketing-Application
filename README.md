@@ -105,7 +105,7 @@ You can test the Lambda function locally by simulating an event using the `test_
 ```bash
 python lambda_function/lambda_function.py
 ```
-## 📽️ Demo Video
+## 📽️ Demo Video:
 
 🎥 [Watch Demo on Google Drive](https://drive.google.com/file/d/1mUFokEZ9Mxr3EOqOoB1xqOLg7rFnjTqI/view?usp=sharing)
 
