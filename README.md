@@ -18,6 +18,7 @@ Helps **college campus ambassadors** (like Unstop student reps) **automate mass 
 - **Other Tools**: Amazon IAM, Git  
 ---
 
+
 ## 🧠 Overview
 
 This project demonstrates a fully serverless email marketing solution leveraging AWS services. It automates the process of sending personalized HTML emails to a list of contacts stored in a CSV file on Amazon S3. The application is designed for scalability, cost-effectiveness, and ease of deployment.
